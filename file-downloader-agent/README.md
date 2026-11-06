@@ -1,5 +1,7 @@
 # Agente de download de ficheiros
 
+> Consulta o [MANUAL.md](MANUAL.md) para o guia ilustrado passo a passo.
+
 Agente em Python (Playwright) que faz login numa aplicação web da empresa e
 descarrega ficheiros automaticamente para a pasta `downloads/`.
 
@@ -37,8 +39,18 @@ sudo playwright install-deps chromium
 
 ## Execução
 
+### Com Python
+
 ```bash
 python agent.py
+```
+
+### Com PowerShell (sem instalar nada — Windows já inclui o PowerShell)
+
+```powershell
+powershell -ExecutionPolicy Bypass -File agent.ps1
+# Para depuração (guarda as páginas em debug/):
+powershell -ExecutionPolicy Bypass -File agent.ps1 -Debug
 ```
 
 Os ficheiros descarregados ficam em `downloads/`.

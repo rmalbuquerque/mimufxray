@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="150" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="seta" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#444"/>
+    </marker>
+  </defs>
+  <style>
+    .caixa { fill:#e8f0fe; stroke:#3b6ea5; stroke-width:2; rx:8; }
+    .texto { font-size:13px; fill:#1a1a1a; text-anchor:middle; }
+  </style>
+  <rect class="caixa" x="10" y="45" width="130" height="50"/>
+  <text class="texto" x="75" y="75">1. Login MIM@UF</text>
+  <line x1="140" y1="70" x2="165" y2="70" stroke="#444" stroke-width="2" marker-end="url(#seta)"/>
+  <rect class="caixa" x="170" y="45" width="130" height="50"/>
+  <text class="texto" x="235" y="75">2. Abrir projeto</text>
+  <line x1="300" y1="70" x2="325" y2="70" stroke="#444" stroke-width="2" marker-end="url(#seta)"/>
+  <rect class="caixa" x="330" y="45" width="150" height="50"/>
+  <text class="texto" x="405" y="70">3. Para cada relatório:</text>
+  <text class="texto" x="405" y="88">pesquisar + executar</text>
+  <line x1="480" y1="70" x2="505" y2="70" stroke="#444" stroke-width="2" marker-end="url(#seta)"/>
+  <rect class="caixa" x="510" y="45" width="110" height="50"/>
+  <text class="texto" x="565" y="75">4. Exportar Excel</text>
+  <line x1="620" y1="70" x2="645" y2="70" stroke="#444" stroke-width="2" marker-end="url(#seta)"/>
+  <rect class="caixa" x="650" y="45" width="100" height="50"/>
+  <text class="texto" x="700" y="70">5. downloads/</text>
+</svg>
