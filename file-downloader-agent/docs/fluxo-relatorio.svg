@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="640" font-family="Arial, sans-serif">
+  <defs>
+    <marker id="seta2" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 z" fill="#444"/>
+    </marker>
+  </defs>
+  <style>
+    .caixa { fill:#e8f0fe; stroke:#3b6ea5; stroke-width:2; rx:8; }
+    .acao { fill:#fff4e0; stroke:#c98a1b; stroke-width:2; rx:8; }
+    .espera { fill:#e6f4e6; stroke:#3d8b3d; stroke-width:2; rx:8; }
+    .texto { font-size:12px; fill:#1a1a1a; text-anchor:middle; }
+  </style>
+  <rect class="caixa" x="40" y="10" width="220" height="42"/>
+  <text class="texto" x="150" y="35">Pesquisar relatório na caixa</text>
+  <line x1="150" y1="52" x2="150" y2="72" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="caixa" x="40" y="75" width="220" height="42"/>
+  <text class="texto" x="150" y="100">Abrir o resultado</text>
+  <line x1="150" y1="117" x2="150" y2="137" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="acao" x="40" y="140" width="220" height="42"/>
+  <text class="texto" x="150" y="165">Selecionar 2026 (período +</text>
+  <text class="texto" x="150" y="178">ano contratual / aba "Ano")</text>
+  <line x1="150" y1="182" x2="150" y2="202" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="acao" x="40" y="205" width="220" height="42"/>
+  <text class="texto" x="150" y="230">"Executar Relatório" (x2)</text>
+  <line x1="150" y1="247" x2="150" y2="267" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="espera" x="40" y="270" width="220" height="42"/>
+  <text class="texto" x="150" y="295">Esperar "Relatório em execução"</text>
+  <line x1="150" y1="312" x2="150" y2="332" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="acao" x="40" y="335" width="220" height="42"/>
+  <text class="texto" x="150" y="360">Exportar → Excel com formatação</text>
+  <line x1="150" y1="377" x2="150" y2="397" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="acao" x="40" y="400" width="220" height="42"/>
+  <text class="texto" x="150" y="425">"Exportar" → descarrega Excel</text>
+  <line x1="150" y1="442" x2="150" y2="462" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="caixa" x="40" y="465" width="220" height="42"/>
+  <text class="texto" x="150" y="490">Home → relatório seguinte</text>
+  <line x1="150" y1="507" x2="150" y2="527" stroke="#444" stroke-width="2" marker-end="url(#seta2)"/>
+  <rect class="espera" x="40" y="530" width="220" height="42"/>
+  <text class="texto" x="150" y="555">Fim: 3 ficheiros em downloads/</text>
+</svg>
