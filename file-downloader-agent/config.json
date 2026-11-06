@@ -1,0 +1,60 @@
+{
+  "base_url": "https://mimuf-alentejo.min-saude.pt/MicroStrategy/asp",
+  "login": {
+    "path": "/Main.aspx",
+    "username_selector": "#Uid",
+    "password_selector": "#Pwd",
+    "submit_selector": "#3054",
+    "success_url_contains": "/Main.aspx",
+    "timeout_ms": 20000
+  },
+  "navigation": [
+    {
+      "click": "a.mstrLargeIconViewItemLink[href*='evt=3010']",
+      "wait_url": "evt=3010",
+      "timeout_ms": 20000
+    }
+  ],
+  "reports": {
+    "search_input": "#searchPattern2",
+    "search_submit": null,
+    "names": ["P02.01.R01", "P02.01.R03", "P02.01.R05"],
+    "result_link": "a:has-text('{name}')",
+    "prompt_steps": [
+      { "click": ".mstrTreeViewNodeShortDisplay[title='2026']" },
+      { "click": ".mstrListBlockItem[title='2026']" }
+    ],
+    "run_selector": "input.mstrTextButton[value='Executar Relatório']",
+    "rerun_clicks": 1,
+    "report_wait_timeout_ms": 600000,
+    "return_click": "#tbHome",
+    "overrides": {
+      "P02.01.R03": {
+        "prompt_steps": [
+          { "click": "span:text-is('Ano')" },
+          { "click": "div[title='2026']" }
+        ]
+      },
+      "P02.01.R05": {
+        "prompt_steps": [
+          { "click": "span:text-is('Ano')" },
+          { "click": "div[title='2026']" }
+        ]
+      }
+    },
+    "timeout_ms": 40000
+  },
+  "export_steps": [
+    { "click": "#tbExport", "timeout_ms": 30000 },
+    { "click": "#exportFormatGrids_excelFormattingGridsIServer", "timeout_ms": 30000 },
+    { "click": "#exportExpandPageByFields", "timeout_ms": 30000 },
+    { "click": "#3131", "download": true, "timeout_ms": 120000 }
+  ],
+  "downloads": {
+    "output_dir": "downloads",
+    "timeout_ms": 60000
+  },
+  "browser": {
+    "headless": true
+  }
+}
